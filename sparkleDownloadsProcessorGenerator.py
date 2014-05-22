@@ -9,7 +9,7 @@ template_string = """<?xml version="1.0" encoding="UTF-8"?>
 <dict>
     <key>Description</key>
     <string>Downloads the current release version of %producto%.</string>
-    <key>IDENTIFIER</key>
+    <key>Identifier</key>
     <string>com.github.autopkg.download.%producto%</string>
     <key>Input</key>
     <dict>
