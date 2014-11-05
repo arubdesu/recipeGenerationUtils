@@ -37,19 +37,6 @@ template_string = """<?xml version="1.0" encoding="UTF-8"?>
             </dict>
         </dict>
         <dict>
-            <key>Processor</key>
-            <string>Unarchiver</string>
-            <key>Arguments</key>
-            <dict>
-                <key>archive_path</key>
-                <string>%pathname%</string>
-                <key>destination_path</key>
-                <string>%pkgroot%/Applications</string>
-                <key>purge_destination</key>
-                <true/>
-            </dict>
-        </dict>
-        <dict>
             <key>Comment</key>
             <string>Get version from the app</string>
             <key>Processor</key>

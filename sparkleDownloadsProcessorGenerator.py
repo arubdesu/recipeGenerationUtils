@@ -43,6 +43,30 @@ template_string = """<?xml version="1.0" encoding="UTF-8"?>
             <string>EndOfCheckPhase</string>
         </dict>
     </array>
+        <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
+            <key>Arguments</key>
+            <dict>
+                <key>archive_path</key>
+                <string>%pathname%</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/downloads/Applications</string>
+                <key>purge_destination</key>
+                <true/>
+            </dict>
+        </dict>
+		<!-- <dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%RECIPE_CACHE_DIR%/downloads/%NAME%.app</string>
+				<key>requirement</key>
+				<string>Put the output codesign --display -v -r- /path/to/app and grab the "designated" section OR, if a pkg, you need to put the output of of pkgutil --check-signature /path/to/pkg in an expected_authority_names array</string>
+			</dict>
+		</dict> -->
 </dict>
 </plist>"""
 
