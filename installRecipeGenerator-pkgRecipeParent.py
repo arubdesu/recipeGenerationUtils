@@ -13,32 +13,16 @@ template_string = """<?xml version="1.0" encoding="UTF-8"?>
     <string>com.github.autopkg.install.%producto%</string>
     <key>Input</key>
     <dict>
-        <key>Name</key>
-        <string>%producto%</string>
     </dict>
     <key>MinimumVersion</key>
     <string>0.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.autopkg.download.%producto%</string>
+    <string>com.github.autopkg.pkg.%producto%</string>
     <key>Process</key>
     <array>
         <dict>
             <key>Processor</key>
-            <string>InstallFromDMG</string>
-            <key>Arguments</key>
-            <dict>
-                <key>dmg_path</key>
-                <string>%pathname%</string>
-                <key>items_to_copy</key>
-                <array>
-                    <dict>
-                        <key>source_item</key>
-                        <string>%producto%.app</string>
-                        <key>destination_path</key>
-                        <string>/Applications/</string>
-                    </dict>
-                </array>
-            </dict>
+            <string>Installer</string>
         </dict>
     </array>
 </dict>
@@ -46,11 +30,18 @@ template_string = """<?xml version="1.0" encoding="UTF-8"?>
 """
 
 products = [
-    "ClipMenu",
-    "Pacifist",
-    "Reflector",
-    "Isolator",
-    "Workshare",
+    "Bartender",
+    "Fake",
+    "Fluid",
+    "Cinch",
+    "iTeleport",
+    "Limechat",
+    "Mactracker",
+    "MSLync",
+    "OnCue2",
+    "LingonX",
+    "quickradar",
+    "MarsEdit",
 ]
 
 filename = "/tmp/scratch"
